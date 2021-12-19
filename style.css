@@ -23,6 +23,7 @@ h1, hr{
 }
 
 footer {
+    visibility: hidden;
     position: absolute;
     bottom: 0;
     width: 100%;

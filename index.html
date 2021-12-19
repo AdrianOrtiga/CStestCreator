@@ -4,42 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Computer Science</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <br>
-        <div class="col">
-            <div>Name:</div>
-            <div>Class:</div>
-        </div>
-        <hr>
-        <div class="col">
-            <span id="Date">
-                <script src="getdate.js"></script>
-            </span>
-            <span></span>
-        </div>
-        <hr>
-        <div class="col">
-            <h1>Regular Check</h1>
-        </div>
-        <hr>
-    </header>
+    <button onclick="printTest()">Print</button>
+    <button onclick="newEvaluation()">New Evaluation</button>
+    <button onclick="newAndPrint()">New Evaluation and print</button>
+    <div id="test">
+        <header style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+            <br>
+            <div class="col" style="display: flex;
+            gap: 45%;">
+                <div>Name:</div>
+                <div>Class:</div>
+            </div>
+            <hr>
+            <div class="col">
+                <span id="Date">
+                    <script src="./js/getdate.js"></script>
+                </span>
+                <span></span>
+            </div>
+            <hr>
+            <div class="col">
+                <h1 style="padding: 0;margin: 0;">Regular Check</h1>
+            </div>
+            <hr>
+        </header>
+        <div style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+            <div id="questions" class="questions">
 
-    <div id="questions" class="questions">
-        
+            </div>
+        </div>
+        <footer style="position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+            <hr>
+            <div>
+                Living word
+            </div>
+        </footer>
     </div>
-
-    <footer>
-        <hr>
-        <div>
-            Living word
-        </div>
-    </footer>
 </body>
-<script src="script.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/print.js"></script>
 
 </html>
